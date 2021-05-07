@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background-image: url('./images/notice-board.jpg');
+  background-size: cover;
+  font-family: freePen, sans-serif;
+  font-size: 25px;
+  color: rgb(1 , 1 , 44);
+}
+
+h1 {
+  margin: 0;
+  font-family: overscribble, sans-serif;
+  font-size: 65px;
+}
+
+p {
+  margin: 0;
+}
+
+#content {
+  width: 50%;
+  margin: 70px auto 20px;
+  height: 80%;
+  background-image: url('./images/paper.jpeg');
+  background-size: cover;
+}
+
+#texto-tarefa {
+  border: none;
+  background-color: transparent;
+  font-family: freePen, sans-serif;
+  font-size: 25px;
+  color: rgb(1 , 1 , 44);
+  width: 470px;
+  padding-left: 30px;
+}
+
+#texto-tarefa:focus {
+  outline: none;
+  width: 470px;
+  padding-left: 30px;
+}
+
+#lista-tarefas {
+  margin: 0;
+  width: 100%;
+  line-height: 2;
+}
+
+.header-content {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.insert-task {
+  margin: 20px;
+  width: 100%;
+}
+
+.tasks-list-container {
+  width: 90%;
+  margin: 20px;
+  min-height: 250px;
+}
+
+.btn-container {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.task {
+  width: 100%;
+}
+
+.task:hover {
+  cursor: pointer;
+}
+
+.task::selection {
+  background-color: transparent;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-family: freePen, sans-serif;
+  font-size: 25px;
+  color: rgb(1 , 1 , 44);
+  text-align: center;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: rgb(136 , 255 , 0);
+  border-radius: 25px;
+  outline: none;
+}
+
+.pin {
+  width: 50px;
+  margin: 0;
+}
+
+.right {
+  margin-left: 550px;
+}
+
+
+@font-face {
+  font-family: freePen;
+  src: url('./font/child_writing_2/ChildWriting-Regular.ttf');
+}
+
+@font-face {
+  font-family: overscribble;
+  src: url('./font/overscribble/OverScribble.ttf');
+}
