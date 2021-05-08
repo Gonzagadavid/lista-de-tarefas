@@ -92,7 +92,7 @@
 
 
 
-\### 7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)
+### 7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)
 
 
 
@@ -100,15 +100,15 @@
 
 
 
-\- Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`
+- Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`
 
 
 
-\- Será verificado que, ao se clicar em um item da lista, ele passa a ter o estilo CSS `background-color: rgb(128, 128, 128)`
+- Será verificado que, ao se clicar em um item da lista, ele passa a ter o estilo CSS `background-color: rgb(128, 128, 128)`
 
 
 
-\### 8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo
+### 8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo
 
 
 
@@ -116,11 +116,11 @@
 
 
 
-\- Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento.
+- Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento.
 
 
 
-\### 9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item
+### 9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item
 
 
 
@@ -140,35 +140,19 @@
 
 
 
-\- Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`.
+- Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`.
 
 
 
-\- Será verificado que a ação pedida é disparada mediante duplo clique no elemento da lista e que os elementos da lista completos tem em si a classe `completed` e a propriedade `text-decoration` com o valor `line-through solid rgb(0, 0, 0)`
+- Será verificado que a ação pedida é disparada mediante duplo clique no elemento da lista e que os elementos da lista completos tem em si a classe `completed` e a propriedade `text-decoration` com o valor `line-through solid rgb(0, 0, 0)`
 
 
 
-\- Será verificado que, com um segundo duplo clique, um elemento completo deixa de sê-lo
+- Será verificado que, com um segundo duplo clique, um elemento completo deixa de sê-lo
 
 
 
-\### 10 - Adicione um botão com id="apaga-tudo" que quando clicado deve apagar todos os itens da lista
-
-
-
-**O que será verificado:**
-
-
-
-\- Será verificado que existe um elemento `button` com o id `apaga-tudo`
-
-
-
-\- Será verificado que, dado que uma lista possui tarefas, um clique no botão a deixa vazia
-
-
-
-\### 11 - Adicione um botão com id="remover-finalizados" que quando clicado remove **somente** os elementos finalizados da sua lista
+### 10 - Adicione um botão com id="apaga-tudo" que quando clicado deve apagar todos os itens da lista
 
 
 
@@ -176,19 +160,15 @@
 
 
 
-\- Será verificado que existe um elemento `button` com o id `remover-finalizados`
+- Será verificado que existe um elemento `button` com o id `apaga-tudo`
 
 
 
-\- Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista
+- Será verificado que, dado que uma lista possui tarefas, um clique no botão a deixa vazia
 
 
 
-\## BÔNUS
-
-
-
-\### 12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava
+### 11 - Adicione um botão com id="remover-finalizados" que quando clicado remove **somente** os elementos finalizados da sua lista
 
 
 
@@ -196,15 +176,35 @@
 
 
 
-\- Será verificado que existe um elemento `button` com o id `salvar-tarefas`
+- Será verificado que existe um elemento `button` com o id `remover-finalizados`
 
 
 
-\- Será verificado que, quando a lista tiver vários elementos, alguns dos quais marcados como finalizados, um recarregamento da página mantém a lista exatamente como está.
+- Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista
 
 
 
-\### 13 - Adicione dois botões, um com id="mover-cima" e outro com id="mover-baixo", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas
+## BÔNUS
+
+
+
+### 12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava
+
+
+
+**O que será verificado:**
+
+
+
+- Será verificado que existe um elemento `button` com o id `salvar-tarefas`
+
+
+
+- Será verificado que, quando a lista tiver vários elementos, alguns dos quais marcados como finalizados, um recarregamento da página mantém a lista exatamente como está.
+
+
+
+### 13 - Adicione dois botões, um com id="mover-cima" e outro com id="mover-baixo", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas
 
 
 
@@ -224,31 +224,31 @@
 
 
 
-\- Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`
+- Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`
 
 
 
-\- Será verificado que, dado que diversos elementos foram acrescentados à lista, movimentá-los de formas diversas os deixa nas posições esperadas
+- Será verificado que, dado que diversos elementos foram acrescentados à lista, movimentá-los de formas diversas os deixa nas posições esperadas
 
 
 
-\- Será verificado que, caso algum elemento esteja finalizado, este status deve persistir ainda que se mova o elemento
+- Será verificado que, caso algum elemento esteja finalizado, este status deve persistir ainda que se mova o elemento
 
 
 
-\- Será verificado que, caso nenhum elemento esteja selecionado, clicar nos botões não altera a lista
+- Será verificado que, caso nenhum elemento esteja selecionado, clicar nos botões não altera a lista
 
 
 
-\- Será verificado que um elemento que esteja selecionado deve se manter selecionado mesmo depois de movido
+- Será verificado que um elemento que esteja selecionado deve se manter selecionado mesmo depois de movido
 
 
 
-\- _Caso especial!_ Será verificado que, caso se tente subir o elemento no topo da lista ou, caso se tente descer o último elemento da lista, esta não deve ser alterada
+- _Caso especial!_ Será verificado que, caso se tente subir o elemento no topo da lista ou, caso se tente descer o último elemento da lista, esta não deve ser alterada
 
 
 
-\### 14 - Adicione um botão com id="remover-selecionado" que, quando clicado, remove o item selecionado
+### 14 - Adicione um botão com id="remover-selecionado" que, quando clicado, remove o item selecionado
 
 
 
@@ -256,8 +256,8 @@
 
 
 
-\- Será verificada a presença de um elemento `button` com um id `remover-selecionado`
+- Será verificada a presença de um elemento `button` com um id `remover-selecionado`
 
 
 
-\- Será verificado que, no clicar no botão, somente o elemento selecionado é removido
+- Será verificado que, no clicar no botão, somente o elemento selecionado é removido
